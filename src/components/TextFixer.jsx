@@ -786,7 +786,7 @@ export default function TextFixer() {
         </div>
       </div>
 
-      {/* ── STATS ── */}
+     {/* ── STATS ── */}
       <div
         className="flex gap-3 px-4 py-3 shrink-0"
         style={{ borderTop: "1px solid #2a2f3a", background: "#0f1115" }}
@@ -797,6 +797,40 @@ export default function TextFixer() {
         <StatCard icon="🚫" label="Cambios ignorados" value={stats.ignorados} color="#ef4444" />
         <StatCard icon="%" label="Porcentaje modificado" value={`${stats.porcentaje}%`} color="#7c3aed" />
       </div>
+
+      {/* ── FOOTER ── */}
+      <footer
+        className="flex items-center justify-between px-4 py-2 text-xs shrink-0"
+        style={{
+          background: "#171a21",
+          borderTop: "1px solid #2a2f3a",
+          color: "#6b7280",
+        }}
+      >
+        <div className="flex items-center gap-2">
+          <span style={{ color: "#ff9800" }}>●</span>
+          <span>
+            TextFixer v1.0 — Developed by Ricardo Adrian Camacho Colli
+          </span>
+        </div>
+
+        <a
+          href="mailto:ing.camacho29@gmail.com"
+          className="transition-colors hover:text-white"
+          style={{
+            color: "#9ca3af",
+            textDecoration: "none",
+          }}
+        >
+          ing.camacho29@gmail.com
+        </a>
+      </footer>
+
     </div>
   );
 }
+
+
+
+
+
